@@ -453,7 +453,7 @@ button:hover {
 
 <audio
     id="birthdayMusic"
-    src="birthday.mp3"
+    src="https://assets.mixkit.co/active_storage/musics/933-1a900c7e-56ea-4e3c-832d-8a87c06b53d9.mp3"
     preload="auto">
 </audio>
 
@@ -915,6 +915,14 @@ function startBirthday() {
     );
 
 }
+
+/* ==================================================
+   AUTO-START ON PAGE LOAD
+================================================== */
+
+window.addEventListener('load', function() {
+    setTimeout(startBirthday, 500);
+});
 
 </script>
 
